@@ -7,11 +7,11 @@ const NAV_HTML = (active) => `
       <img src="/images/stackly-logo-green.webp" alt="STACKLY Logo" class="nav-logo-img" />
     </a>
     <ul class="nav-links" id="navLinks">
-      <li><a href="/index.html" class="${active === 'home' ? 'active' : ''}">Home</a></li>
-      <li><a href="/about.html" class="${active === 'about' ? 'active' : ''}">About</a></li>
-      <li><a href="/services.html" class="${active === 'services' ? 'active' : ''}">Services</a></li>
-      <li><a href="/blog.html" class="${active === 'blog' ? 'active' : ''}">Blog</a></li>
-      <li><a href="/contact.html" class="${active === 'contact' ? 'active' : ''}">Contact</a></li>
+      <li><a href="../index.html" class="${active === 'home' ? 'active' : ''}">Home</a></li>
+      <li><a href="../about.html" class="${active === 'about' ? 'active' : ''}">About</a></li>
+      <li><a href="../services.html" class="${active === 'services' ? 'active' : ''}">Services</a></li>
+      <li><a href="../blog.html" class="${active === 'blog' ? 'active' : ''}">Blog</a></li>
+      <li><a href="../contact.html" class="${active === 'contact' ? 'active' : ''}">Contact</a></li>
       <li class="nav-mobile-only" id="navAuthMobile"></li>
     </ul>
     <div class="nav-cta">
@@ -29,8 +29,8 @@ const FOOTER_HTML = `
   <div class="container">
     <div class="foot-grid">
       <div>
-        <a href="index.html">
-          <img src="/images/stackly-logo-green.webp" alt="STACKLY" style="height:80px;width:120px;margin-bottom:16px"/>
+        <a href="../index.html">
+          <img src="./images/stackly-logo-green.webp" alt="STACKLY" style="height:80px;width:120px;margin-bottom:16px"/>
         </a>
         <p style="color:#c9d1c1;max-width:320px">Farm-fresh organic FMCG delivered from local farms to your kitchen, every single day.</p>
         <div class="foot-social">
