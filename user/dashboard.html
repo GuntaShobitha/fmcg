@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>User Dashboard — Stackly</title>
+  <link rel="icon" href="/favicon.ico" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+  <div class="dash">
+    <div id="dash-side"></div>
+    <main class="main">
+      <div id="dash-topbar"></div>
+      <div class="stats">
+        <div class="stat">
+          <div class="n">12</div>
+          <div class="l">Active Orders</div>
+          <div class="d">+2 this week</div>
+        </div>
+        <div class="stat">
+          <div class="n">48</div>
+          <div class="l">Boxes Received</div>
+          <div class="d">Since Jan</div>
+        </div>
+        <div class="stat">
+          <div class="n">$240</div>
+          <div class="l">Saved YTD</div>
+          <div class="d">vs supermarket</div>
+        </div>
+        <div class="stat">
+          <div class="n">7</div>
+          <div class="l">Wishlisted</div>
+          <div class="d">3 back in stock</div>
+        </div>
+      </div>
+      <div class="panels">
+        <div class="panel">
+          <h3>Recent Orders</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Order</th>
+                <th>Item</th>
+                <th>Date</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#SK-1042</td>
+                <td>Family Fruit Box</td>
+                <td>Jul 18</td>
+                <td><span class="badge ok">Delivered</span></td>
+              </tr>
+              <tr>
+                <td>#SK-1039</td>
+                <td>Veggie Rainbow</td>
+                <td>Jul 15</td>
+                <td><span class="badge ok">Delivered</span></td>
+              </tr>
+              <tr>
+                <td>#SK-1035</td>
+                <td>Dairy Pantry</td>
+                <td>Jul 11</td>
+                <td><span class="badge warn">Shipped</span></td>
+              </tr>
+              <tr>
+                <td>#SK-1030</td>
+                <td>Grain & Pulse</td>
+                <td>Jul 08</td>
+                <td><span class="badge new">Processing</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="panel">
+          <h3>Next Delivery</h3>
+          <img src="../images/service.webp" alt=""
+            style="border-radius:10px;margin-bottom:14px;aspect-ratio:16/10;object-fit:cover;width:100%"
+            loading="lazy" />
+          <p style="color:var(--muted);font-size:.9rem">Tomorrow · 4pm–6pm</p>
+          <h4 style="margin:8px 0">Family Fruit Box</h4>
+          <a href="/user/orders.html" class="btn btn-primary"
+            style="width:100%;justify-content:center;margin-top:12px">Track order</a>
+        </div>
+      </div>
+      <div class="panel" style="margin-top:20px">
+        <h3>Recommended For You</h3>
+        <div class="prod-grid" style="margin-top:0">
+          <div class="prod">
+            <div class="prod-img"><img src="../images/product-1.webp" alt="" loading="lazy" /></div>
+            <div class="prod-body">
+              <h3>Green Apples</h3>
+              <div class="prod-price">$4.20</div>
+            </div>
+          </div>
+          <div class="prod">
+            <div class="prod-img"><img src="../images/product-2.webp" alt="" loading="lazy" /></div>
+            <div class="prod-body">
+              <h3>Veggie Box</h3>
+              <div class="prod-price">$18.50</div>
+            </div>
+          </div>
+          <div class="prod">
+            <div class="prod-img"><img src="../images/product-3.webp" alt="" loading="lazy" /></div>
+            <div class="prod-body">
+              <h3>Dairy Combo</h3>
+              <div class="prod-price">$12.90</div>
+            </div>
+          </div>
+          <div class="prod">
+            <div class="prod-img"><img src="../images/product-4.webp" alt="" loading="lazy" /></div>
+            <div class="prod-body">
+              <h3>Grain Mix</h3>
+              <div class="prod-price">$9.60</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="/js/auth.js"></script>
+  <script src="/js/dashboard.js"></script>
+  <script>renderDashShell('user', 'dashboard', 'Welcome home ');</script>
+</body>
+
+</html>

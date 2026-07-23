@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Products — Admin</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/css/style.css"/></head>
+<body><div class="dash"><div id="dash-side"></div><main class="main"><div id="dash-topbar"></div>
+<div class="panel"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px"><h3>Inventory</h3><button class="btn btn-primary">+ Add product</button></div>
+<table><thead><tr><th></th><th>Product</th><th>Category</th><th>Price</th><th>Stock</th><th>Status</th></tr></thead>
+<tbody>
+<tr><td><img src="/images/product-1.webp" style="width:44px;height:44px;border-radius:8px;object-fit:cover" loading="lazy" alt=""/></td><td>Green Apples</td><td>Fruits</td><td>$4.20</td><td>240 kg</td><td><span class="badge ok">Active</span></td></tr>
+<tr><td><img src="/images/product-2.webp" style="width:44px;height:44px;border-radius:8px;object-fit:cover" loading="lazy" alt=""/></td><td>Veggie Box</td><td>Vegetables</td><td>$18.50</td><td>84 pack</td><td><span class="badge ok">Active</span></td></tr>
+<tr><td><img src="/images/product-3.webp" style="width:44px;height:44px;border-radius:8px;object-fit:cover" loading="lazy" alt=""/></td><td>Dairy Combo</td><td>Dairy</td><td>$12.90</td><td>32 pack</td><td><span class="badge warn">Low</span></td></tr>
+<tr><td><img src="/images/product-4.webp" style="width:44px;height:44px;border-radius:8px;object-fit:cover" loading="lazy" alt=""/></td><td>Grain Mix</td><td>Grains</td><td>$9.60</td><td>180 kg</td><td><span class="badge ok">Active</span></td></tr>
+<tr><td><img src="/images/blog-1.webp" style="width:44px;height:44px;border-radius:8px;object-fit:cover" loading="lazy" alt=""/></td><td>Smoothie Pack</td><td>Beverages</td><td>$6.40</td><td>0</td><td><span class="badge new">Out</span></td></tr>
+<tr><td><img src="/images/blog-3.webp" style="width:44px;height:44px;border-radius:8px;object-fit:cover" loading="lazy" alt=""/></td><td>Quinoa Bowl Kit</td><td>Meal Kits</td><td>$11.50</td><td>56</td><td><span class="badge ok">Active</span></td></tr>
+</tbody></table></div>
+</main></div><script src="/js/auth.js"></script><script src="/js/dashboard.js"></script>
+<script>renderDashShell('admin','products','Product Inventory');</script></body></html>

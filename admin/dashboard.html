@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Admin Dashboard — Stackly</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/css/style.css"/>
+</head>
+<body>
+<div class="dash">
+  <div id="dash-side"></div>
+  <main class="main">
+    <div id="dash-topbar"></div>
+    <div class="stats">
+      <div class="stat"><div class="n">1,284</div><div class="l">Orders Today</div><div class="d">+12% vs yesterday</div></div>
+      <div class="stat"><div class="n">$48.2k</div><div class="l">Revenue Today</div><div class="d">+8% MoM</div></div>
+      <div class="stat"><div class="n">48,320</div><div class="l">Total Customers</div><div class="d">+240 this week</div></div>
+      <div class="stat"><div class="n">220</div><div class="l">Active Farmers</div><div class="d">4 new</div></div>
+    </div>
+    <div class="panels">
+      <div class="panel">
+        <h3>Recent Orders</h3>
+        <table>
+          <thead><tr><th>Order</th><th>Customer</th><th>Amount</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>#SK-4042</td><td>Meera S.</td><td>$32.00</td><td><span class="badge ok">Delivered</span></td></tr>
+            <tr><td>#SK-4041</td><td>Rohan A.</td><td>$22.00</td><td><span class="badge warn">Shipped</span></td></tr>
+            <tr><td>#SK-4040</td><td>Priya K.</td><td>$54.00</td><td><span class="badge new">Processing</span></td></tr>
+            <tr><td>#SK-4039</td><td>Jason B.</td><td>$18.00</td><td><span class="badge ok">Delivered</span></td></tr>
+            <tr><td>#SK-4038</td><td>Lea M.</td><td>$45.00</td><td><span class="badge warn">Shipped</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="panel">
+        <h3>Top Products</h3>
+        <div style="display:grid;gap:12px;margin-top:14px">
+          <div style="display:flex;gap:12px;align-items:center"><img src="/images/product-1.webp" alt="" style="width:50px;height:50px;border-radius:8px;object-fit:cover" loading="lazy"/><div style="flex:1"><strong>Green Apples</strong><br><small style="color:var(--muted)">824 sold</small></div><span style="color:var(--green);font-weight:600">$3.4k</span></div>
+          <div style="display:flex;gap:12px;align-items:center"><img src="/images/product-2.webp" alt="" style="width:50px;height:50px;border-radius:8px;object-fit:cover" loading="lazy"/><div style="flex:1"><strong>Veggie Box</strong><br><small style="color:var(--muted)">642 sold</small></div><span style="color:var(--green);font-weight:600">$11.8k</span></div>
+          <div style="display:flex;gap:12px;align-items:center"><img src="/images/product-3.webp" alt="" style="width:50px;height:50px;border-radius:8px;object-fit:cover" loading="lazy"/><div style="flex:1"><strong>Dairy Combo</strong><br><small style="color:var(--muted)">518 sold</small></div><span style="color:var(--green);font-weight:600">$6.6k</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="panel" style="margin-top:20px">
+      <h3>Sales Overview (last 7 days)</h3>
+      <div style="display:flex;gap:12px;align-items:flex-end;height:180px;margin-top:20px;padding:20px 0;border-bottom:1px solid #eee">
+        <div style="flex:1;background:linear-gradient(to top,var(--green),var(--green-light));height:60%;border-radius:6px 6px 0 0;transition:.4s"></div>
+        <div style="flex:1;background:linear-gradient(to top,var(--green),var(--green-light));height:80%;border-radius:6px 6px 0 0"></div>
+        <div style="flex:1;background:linear-gradient(to top,var(--green),var(--green-light));height:45%;border-radius:6px 6px 0 0"></div>
+        <div style="flex:1;background:linear-gradient(to top,var(--green),var(--green-light));height:90%;border-radius:6px 6px 0 0"></div>
+        <div style="flex:1;background:linear-gradient(to top,var(--amber),#f0c368);height:100%;border-radius:6px 6px 0 0"></div>
+        <div style="flex:1;background:linear-gradient(to top,var(--green),var(--green-light));height:70%;border-radius:6px 6px 0 0"></div>
+        <div style="flex:1;background:linear-gradient(to top,var(--green),var(--green-light));height:65%;border-radius:6px 6px 0 0"></div>
+      </div>
+      <div style="display:flex;justify-content:space-between;margin-top:10px;color:var(--muted);font-size:.8rem"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span></div>
+    </div>
+  </main>
+</div>
+<script src="/js/auth.js"></script><script src="/js/dashboard.js"></script>
+<script>renderDashShell('admin','dashboard','Admin Overview');</script>
+</body>
+</html>

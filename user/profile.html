@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Profile — Stackly</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/css/style.css"/></head>
+<body><div class="dash"><div id="dash-side"></div><main class="main"><div id="dash-topbar"></div>
+<div class="panels">
+<div class="panel"><h3>Profile Info</h3>
+<form style="display:grid;gap:14px;margin-top:14px" onsubmit="event.preventDefault();alert('Saved!')">
+<div class="field"><label>Full name</label><input type="text" value="Meera Sen"/></div>
+<div class="field"><label>Email</label><input type="email" value="meera@fresh.com"/></div>
+<div class="field"><label>Phone</label><input type="tel" value="+1 555 010 2244"/></div>
+<div class="field"><label>Delivery address</label><input type="text" value="14 Meadow Ln, Farmington"/></div>
+<button type="submit" class="btn btn-primary">Save changes</button>
+</form></div>
+<div class="panel"><h3>Preferences</h3>
+<div style="display:grid;gap:12px;margin-top:14px">
+<label style="display:flex;justify-content:space-between"><span>Weekly newsletter</span><input type="checkbox" checked/></label>
+<label style="display:flex;justify-content:space-between"><span>Order SMS updates</span><input type="checkbox" checked/></label>
+<label style="display:flex;justify-content:space-between"><span>Recipe suggestions</span><input type="checkbox"/></label>
+<label style="display:flex;justify-content:space-between"><span>Seasonal deals</span><input type="checkbox" checked/></label>
+</div></div>
+</div>
+</main></div><script src="/js/auth.js"></script><script src="/js/dashboard.js"></script>
+<script>renderDashShell('user','profile','Profile');</script></body></html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Settings — Stackly</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/css/style.css"/></head>
+<body><div class="dash"><div id="dash-side"></div><main class="main"><div id="dash-topbar"></div>
+<div class="panel"><h3>Account Settings</h3>
+<form style="display:grid;gap:14px;margin-top:14px;max-width:520px" onsubmit="event.preventDefault();alert('Settings saved!')">
+<div class="field"><label>Language</label><select><option>English</option><option>Español</option><option>Français</option></select></div>
+<div class="field"><label>Timezone</label><select><option>UTC-5 (Eastern)</option><option>UTC-8 (Pacific)</option></select></div>
+<div class="field"><label>Change password</label><input type="password" placeholder="New password"/></div>
+<div class="field"><label>Two-factor auth</label><select><option>Off</option><option>SMS</option><option>Authenticator</option></select></div>
+<button type="submit" class="btn btn-primary">Save</button>
+<button type="button" onclick="logout()" class="btn btn-ghost">Logout</button>
+</form></div>
+</main></div><script src="/js/auth.js"></script><script src="/js/dashboard.js"></script>
+<script>renderDashShell('user','settings','Settings');</script></body></html>

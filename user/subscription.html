@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Subscription — Stackly</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+    <div class="dash">
+        <div id="dash-side"></div>
+        <main class="main">
+            <div id="dash-topbar"></div>
+            <div class="panels">
+                <div class="panel">
+                    <h3>Current Plan</h3>
+                    <div
+                        style="display:flex;justify-content:space-between;align-items:center;padding:20px;background:var(--sand);border-radius:12px;margin-top:12px">
+                        <div>
+                            <h2 style="font-size:1.4rem">Family Box</h2>
+                            <p style="color:var(--muted);font-size:.9rem">Weekly · $32/wk</p>
+                        </div>
+                        <span class="badge ok">Active</span>
+                    </div>
+                    <div style="margin-top:20px;display:grid;gap:12px">
+                        <div style="display:flex;justify-content:space-between"><span>Next
+                                delivery</span><strong>Tomorrow, 4–6pm</strong></div>
+                        <div style="display:flex;justify-content:space-between"><span>Next billing</span><strong>Jul
+                                25</strong></div>
+                        <div style="display:flex;justify-content:space-between"><span>Delivery day</span><strong>Every
+                                Wednesday</strong></div>
+                    </div>
+                    <div style="display:flex;gap:10px;margin-top:20px"><button class="btn btn-primary">Skip next
+                            week</button><button class="btn btn-ghost">Change plan</button></div>
+                </div>
+                <div class="panel">
+                    <h3>Upgrade options</h3>
+                    <div style="display:grid;gap:10px;margin-top:12px">
+                        <button class="upgrade-button"><div style="padding:14px;border:1px solid #eee;border-radius:10px"><strong>Starter</strong> ·
+                            $18/wk<p style="color:var(--muted);font-size:.85rem">3 kg mixed</p>
+                        </div></button>
+                        <button class="upgrade-button" active><div style="padding:14px;border:2px solid var(--green);border-radius:10px"><strong>Family
+                                (current)</strong> · $32/wk<p style="color:var(--muted);font-size:.85rem">6 kg + dairy
+                            </p>
+                        </div></button>
+                        <button class="upgrade-button"><div style="padding:14px;border:1px solid #eee;border-radius:10px"><strong>Feast</strong> ·
+                            $54/wk<p style="color:var(--muted);font-size:.85rem">10 kg premium</p>
+                        </div></button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="/js/auth.js"></script>
+    <script src="/js/dashboard.js"></script>
+    <script>renderDashShell('user', 'subscription', 'My Subscription');</script>
+</body>
+
+</html>
