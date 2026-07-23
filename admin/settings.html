@@ -18,7 +18,7 @@
             <div id="dash-topbar"></div>
             <div class="panel">
                 <h3>Store Settings</h3>
-                <form style="display:grid;gap:14px;margin-top:14px;max-width:520px"
+                <div style="display:grid;gap:14px;margin-top:14px;max-width:520px"
                     onsubmit="event.preventDefault();alert('Saved!')">
                     <div class="field"><label>Store name</label><input type="text" value="Stackly Organic" /></div>
                     <div class="field"><label>Support email</label><input type="email" value="hello@stackly.co" /></div>
@@ -30,7 +30,7 @@
                     <div class="field"><label>Delivery cutoff</label><input type="time" value="11:00" /></div>
                     <button type="submit" onclick="window.location.href='../404.html'" style="text-align: center;" class="btn btn-primary">Save changes</button>
                     <button type="button" onclick="logout()" class="btn btn-ghost">Logout</button>
-                </form>
+                </div>
             </div>
         </main>
     </div>
