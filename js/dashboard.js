@@ -9,12 +9,12 @@ const SIDE_ITEMS = {
    
   ],
   admin: [
-    ['dashboard','📊','Dashboard','./admin/dashboard.html'],
-    ['orders','📦','Orders','./admin/orders.html'],
-    ['products','🥦','Products','./admin/products.html'],
-    ['customers','👥','Customers','./admin/customers.html'],
-    ['farmers','👩‍🌾','Farmers','./admin/farmers.html'],
-    ['analytics','📈','Analytics','./admin/analytics.html'],
+    ['dashboard','📊','Dashboard','../admin/dashboard.html'],
+    ['orders','📦','Orders','../admin/orders.html'],
+    ['products','🥦','Products','../admin/products.html'],
+    ['customers','👥','Customers','../admin/customers.html'],
+    ['farmers','👩‍🌾','Farmers','../admin/farmers.html'],
+    ['analytics','📈','Analytics','../admin/analytics.html'],
   ],
 };
 
