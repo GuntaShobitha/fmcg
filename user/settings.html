@@ -18,7 +18,7 @@
             <div id="dash-topbar"></div>
             <div class="panel">
                 <h3>Account Settings</h3>
-                <form style="display:grid;gap:14px;margin-top:14px;max-width:520px"
+                <div style="display:grid;gap:14px;margin-top:14px;max-width:520px"
                     onsubmit="event.preventDefault();alert('Settings saved!')">
                     <div class="field"><label>Language</label><select>
                             <option>English</option>
@@ -36,9 +36,9 @@
                             <option>SMS</option>
                             <option>Authenticator</option>
                         </select></div>
-                    <button type="submit" class="btn btn-primary">Save</button>
+                    <button type="submit" onclick="window.location.href='../404.html'" class="btn btn-primary" style="text-align: center;">Save</button>
                     <button type="button" onclick="logout()" class="btn btn-ghost">Logout</button>
-                </form>
+                </div>
             </div>
         </main>
     </div>
