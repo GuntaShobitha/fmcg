@@ -1,37 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>404 — Page not found · Stackly</title>
-<link rel="icon" href="/favicon.ico"/>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="/css/style.css"/>
-<style>
-.err-veg{position:absolute;font-size:60px;opacity:.5;animation:float 5s ease-in-out infinite}
-.err-veg.v1{top:10%;left:8%}
-.err-veg.v2{top:20%;right:10%;animation-delay:.4s}
-.err-veg.v3{bottom:12%;left:14%;animation-delay:.8s}
-.err-veg.v4{bottom:20%;right:12%;animation-delay:1.2s}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>404 — Page not found · Stackly</title>
+  <link rel="icon" href="/favicon.ico" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <style>
+    .err-veg {
+      position: absolute;
+      font-size: 60px;
+      opacity: .5;
+      animation: float 5s ease-in-out infinite
+    }
+
+    .err-veg.v1 {
+      top: 10%;
+      left: 8%
+    }
+
+    .err-veg.v2 {
+      top: 20%;
+      right: 10%;
+      animation-delay: .4s
+    }
+
+    .err-veg.v3 {
+      bottom: 12%;
+      left: 14%;
+      animation-delay: .8s
+    }
+
+    .err-veg.v4 {
+      bottom: 20%;
+      right: 12%;
+      animation-delay: 1.2s
+    }
+  </style>
 </head>
+
 <body>
-<div class="err" style="position:relative;overflow:hidden">
-  <span class="err-veg v1">🥕</span>
-  <span class="err-veg v2">🍎</span>
-  <span class="err-veg v3">🌽</span>
-  <span class="err-veg v4">🥦</span>
-  <div class="err-inner">
-    <div class="err-emoji">🥬</div>
-    <div class="err-num">404</div>
-    <h2>This page got composted 🌱</h2>
-    <p style="color:var(--muted);margin-top:10px">The page you're looking for isn't in our harvest today. Let's get you back to something fresh.</p>
-    <div class="btns">
-      <a href="/index.html" class="btn btn-primary">🏡 Back to Home</a>
-      <button onclick="history.back()" class="btn btn-ghost">← Go Back</button>
+  <div class="err" style="position:relative;overflow:hidden">
+    <span class="err-veg v1">🥕</span>
+    <span class="err-veg v2">🍎</span>
+    <span class="err-veg v3">🌽</span>
+    <span class="err-veg v4">🥦</span>
+    <div class="err-inner">
+      <div class="err-emoji">🥬</div>
+      <div class="err-num">404</div>
+      <h2>This page got composted 🌱</h2>
+      <p style="color:var(--muted);margin-top:10px">The page you're looking for isn't in our harvest today. Let's get
+        you back to something fresh.</p>
+      <div class="btns">
+        <a href="./index.html" class="btn btn-primary">🏡 Back to Home</a>
+        <button onclick="history.back()" class="btn btn-ghost">← Go Back</button>
+      </div>
     </div>
   </div>
-</div>
-<div id="stackly-loader"><img src="/images/stackly-logo-green.webp" alt="Loading"/></div>
-<script src="/js/include.js"></script>
+  <div id="stackly-loader"><img src="./images/stackly-logo-green.webp" alt="Loading" /></div>
+  <script src="./js/include.js"></script>
 </body>
+
 </html>
