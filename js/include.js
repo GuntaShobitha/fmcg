@@ -3,7 +3,7 @@
 const NAV_HTML = (active) => `
 <nav class="nav">
   <div class="container inner">
-    <a href="/index.html" class="nav-logo" aria-label="Stackly home">
+    <a href="./index.html" class="nav-logo" aria-label="Stackly home">
       <img src="./images/stackly-logo-green.webp" alt="STACKLY Logo" class="nav-logo-img" />
     </a>
     <ul class="nav-links" id="navLinks">
