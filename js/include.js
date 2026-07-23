@@ -241,6 +241,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   const s = document.createElement('script');
-  s.src = '/js/main.js';
+  s.src = './js/main.js';
   document.body.appendChild(s);
 });
