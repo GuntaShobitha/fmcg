@@ -52,20 +52,20 @@
   window.addEventListener('resize', render);
   render();
 
-  nodes.forEach((node) => {
-    node.addEventListener('click', (e) => {
-      e.stopPropagation();
-      const wasActive = node.classList.contains('active');
-      nodes.forEach((n) => n.classList.remove('active'));
-      if (!wasActive) {
-        node.classList.add('active');
-        autoRotate = false;
-      } else {
-        autoRotate = true;
-      }
-      render();
-    });
-  });
+  // nodes.forEach((node) => {
+  //   node.addEventListener('click', (e) => {
+  //     e.stopPropagation();
+  //     const wasActive = node.classList.contains('active');
+  //     nodes.forEach((n) => n.classList.remove('active'));
+  //     if (!wasActive) {
+  //       node.classList.add('active');
+  //       autoRotate = false;
+  //     } else {
+  //       autoRotate = true;
+  //     }
+  //     render();
+  //   });
+  // });
 
   stage.addEventListener('click', () => {
     nodes.forEach((n) => n.classList.remove('active'));

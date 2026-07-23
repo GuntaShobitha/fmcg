@@ -27,7 +27,7 @@ function renderDashShell(role, active, title){
     <aside class="sidebar">
       <div class="brand">
 <a href="./dashboard.html">
-          <img src="./images/stackly-logo-green.webp" alt="STACKLY" style="height:80px;width:120px;margin-bottom:16px"/>
+          <img src="../images/stackly-logo-green.webp" alt="STACKLY" style="height:80px;width:120px;margin-bottom:16px"/>
         </a>      </div>
       <div class="side-profile">
         <div class="side-avatar">${initials}</div>
@@ -40,7 +40,7 @@ function renderDashShell(role, active, title){
         ${items.map(i=>`<li><a href="${i[3]}" class="${i[0]===active?'active':''}"><span class="ico">${i[1]}</span>${i[2]}</a></li>`).join('')}
       </ul>
       <div class="side-bottom">
-        <a href="/${role}/settings.html" class="${active==='settings'?'active':''}" style="display:flex;align-items:center;gap:12px;padding:12px 16px;border-radius:10px;color:#c9d1c1"><span class="ico">⚙️</span>Settings</a>
+        <a href="../${role}/settings.html" class="${active==='settings'?'active':''}" style="display:flex;align-items:center;gap:12px;padding:12px 16px;border-radius:10px;color:#c9d1c1"><span class="ico">⚙️</span>Settings</a>
         <a onclick="logout()" style="display:flex;align-items:center;gap:12px;padding:12px 16px;border-radius:10px;color:#c9d1c1;cursor:pointer"><span class="ico">↩</span>Logout</a>
       </div>
     </aside>`;
