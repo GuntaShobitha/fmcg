@@ -4,14 +4,14 @@ const NAV_HTML = (active) => `
 <nav class="nav">
   <div class="container inner">
     <a href="/index.html" class="nav-logo" aria-label="Stackly home">
-      <img src="/images/stackly-logo-green.webp" alt="STACKLY Logo" class="nav-logo-img" />
+      <img src="./images/stackly-logo-green.webp" alt="STACKLY Logo" class="nav-logo-img" />
     </a>
     <ul class="nav-links" id="navLinks">
-      <li><a href="../index.html" class="${active === 'home' ? 'active' : ''}">Home</a></li>
-      <li><a href="../about.html" class="${active === 'about' ? 'active' : ''}">About</a></li>
-      <li><a href="../services.html" class="${active === 'services' ? 'active' : ''}">Services</a></li>
-      <li><a href="../blog.html" class="${active === 'blog' ? 'active' : ''}">Blog</a></li>
-      <li><a href="../contact.html" class="${active === 'contact' ? 'active' : ''}">Contact</a></li>
+      <li><a href="./index.html" class="${active === 'home' ? 'active' : ''}">Home</a></li>
+      <li><a href="./about.html" class="${active === 'about' ? 'active' : ''}">About</a></li>
+      <li><a href="./services.html" class="${active === 'services' ? 'active' : ''}">Services</a></li>
+      <li><a href="./blog.html" class="${active === 'blog' ? 'active' : ''}">Blog</a></li>
+      <li><a href="./contact.html" class="${active === 'contact' ? 'active' : ''}">Contact</a></li>
       <li class="nav-mobile-only" id="navAuthMobile"></li>
     </ul>
     <div class="nav-cta">
