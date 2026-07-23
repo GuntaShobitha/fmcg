@@ -5,7 +5,7 @@
 <title>Login — Stackly</title>
 <link rel="icon" href="/favicon.ico"/>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="/css/style.css"/>
+<link rel="stylesheet" href="./css/style.css"/>
 </head>
 <body>
 <div class="auth-wrap">
@@ -18,8 +18,8 @@
   </div>
   <div class="auth-body">
     <div class="auth-top">
-      <a href="/index.html"><img src="images/stackly-logo-green.webp" alt="STACKLY" style="height:80px; width:120px;"/></a>
-      <a href="/index.html" class="btn btn-ghost" style="padding:8px 16px;font-size:.85rem">← Back to Home</a>
+      <a href="./index.html"><img src="./images/stackly-logo-green.webp" alt="STACKLY" style="height:80px; width:120px;"/></a>
+      <a href="./index.html" class="btn btn-ghost" style="padding:8px 16px;font-size:.85rem">← Back to Home</a>
     </div>
     <form class="auth-form" onsubmit="return handleLogin(event)">
       <h2>Welcome back </h2>
@@ -42,15 +42,15 @@
       </div>
       <div class="form-row">
         <label style="display:inline-flex;gap:6px;align-items:center"><input type="checkbox"/> Remember me</label>
-        <a href="404.html">Forgot password?</a>
+        <a href="./404.html">Forgot password?</a>
       </div>
       <button type="submit" class="btn btn-primary">Sign In</button>
-      <p class="auth-alt">New to Stackly? <a href="register.html">Create an account</a></p>
+      <p class="auth-alt">New to Stackly? <a href="./register.html">Create an account</a></p>
     </form>
   </div>
 </div>
-<script src="js/auth.js"></script>
-<div id="stackly-loader"><img src="images/stackly-logo-green.webp" alt="Loading"/></div>
-<script src="js/include.js"></script>
+<script src="./js/auth.js"></script>
+<div id="stackly-loader"><img src="./images/stackly-logo-green.webp" alt="Loading"/></div>
+<script src="./js/include.js"></script>
 </body>
 </html>

@@ -1520,7 +1520,7 @@ footer a:hover {
 }
 
 .auth-visual {
-  background: url('/images/hero.webp') center/cover;
+  background: url('../images/hero.webp') center/cover;
   position: relative
 }
 
@@ -2892,27 +2892,27 @@ video {
 }
 
 body[data-page="about"] .pageHead::before {
-  background-image: url('/images/about.webp')
+  background-image: url('../images/about.webp')
 }
 
 body[data-page="services"] .pageHead::before {
-  background-image: url('/images/service.webp')
+  background-image: url('../images/service.webp')
 }
 
 body[data-page="products"] .pageHead::before {
-  background-image: url('/images/product-2.webp')
+  background-image: url('../images/product-2.webp')
 }
 
 body[data-page="categories"] .pageHead::before {
-  background-image: url('/images/product-1.webp')
+  background-image: url('../images/product-1.webp')
 }
 
 body[data-page="blog"] .pageHead::before {
-  background-image: url('/images/blog-1.webp')
+  background-image: url('../images/blog-1.webp')
 }
 
 body[data-page="contact"] .pageHead::before {
-  background-image: url('/images/contact.webp')
+  background-image: url('../images/contact.webp')
 }
 
 /* Cards equal height */

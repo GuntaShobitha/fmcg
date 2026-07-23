@@ -98,12 +98,12 @@ function renderAuthArea() {
   if (!desktop || !mobile) return;
 
   if (!u) {
-    desktop.innerHTML = `<a href="/login.html" class="btn btn-primary nav-login-btn">Login</a>`;
-    mobile.innerHTML = `<a href="/login.html" class="btn btn-primary nav-mobile-login">Login</a>`;
+    desktop.innerHTML = `<a href="./login.html" class="btn btn-primary nav-login-btn">Login</a>`;
+    mobile.innerHTML = `<a href="./login.html" class="btn btn-primary nav-mobile-login">Login</a>`;
     return;
   } else {
-      desktop.innerHTML = `<a href="/login.html" class="btn btn-primary nav-login-btn">Login</a>`;
-    mobile.innerHTML = `<a href="/login.html" class="btn btn-primary nav-mobile-login">Login</a>`;
+      desktop.innerHTML = `<a href="./login.html" class="btn btn-primary nav-login-btn">Login</a>`;
+    mobile.innerHTML = `<a href="./login.html" class="btn btn-primary nav-mobile-login">Login</a>`;
   }
 
   // const dashHref = u.role === 'admin' ? '/admin/dashboard.html' : '/user/dashboard.html';
@@ -165,7 +165,7 @@ function setupMobileMenu() {
   document.addEventListener('click', (e) => {
     if (e.target.closest('[data-logout]')) {
       localStorage.removeItem('stackly_user');
-      window.location.href = '/index.html';
+      window.location.href = './index.html';
     }
   });
 }

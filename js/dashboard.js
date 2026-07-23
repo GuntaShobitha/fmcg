@@ -25,7 +25,7 @@ function renderDashShell(role, active, title){
   const initials = (u.name||u.email).slice(0,1).toUpperCase();
   const side = `
     <aside class="sidebar">
-      <div class="brand"><img src="/images/stackly-logo-green.webp" alt="STACKLY"/></div>
+      <div class="brand"><img src="./images/stackly-logo-green.webp" alt="STACKLY"/></div>
       <div class="side-profile">
         <div class="side-avatar">${initials}</div>
         <div class="side-profile-info">
