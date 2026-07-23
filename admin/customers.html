@@ -1,17 +1,91 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Customers — Admin</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="/css/style.css"/></head>
-<body><div class="dash"><div id="dash-side"></div><main class="main"><div id="dash-topbar"></div>
-<div class="panel"><h3>Customers (48,320)</h3>
-<table><thead><tr><th>Name</th><th>Email</th><th>Plan</th><th>Orders</th><th>Total Spent</th><th>Status</th></tr></thead>
-<tbody>
-<tr><td>Meera Sen</td><td>meera@fresh.com</td><td>Family</td><td>48</td><td>$1,536</td><td><span class="badge ok">Active</span></td></tr>
-<tr><td>Rohan A.</td><td>rohan@mail.com</td><td>Starter</td><td>22</td><td>$396</td><td><span class="badge ok">Active</span></td></tr>
-<tr><td>Priya K.</td><td>priya@mail.com</td><td>Feast</td><td>84</td><td>$4,536</td><td><span class="badge ok">Active</span></td></tr>
-<tr><td>Jason B.</td><td>jason@mail.com</td><td>Starter</td><td>12</td><td>$216</td><td><span class="badge warn">Paused</span></td></tr>
-<tr><td>Lea M.</td><td>lea@mail.com</td><td>Family</td><td>36</td><td>$1,152</td><td><span class="badge ok">Active</span></td></tr>
-<tr><td>Aditi V.</td><td>aditi@mail.com</td><td>Family</td><td>28</td><td>$896</td><td><span class="badge ok">Active</span></td></tr>
-</tbody></table></div>
-</main></div><script src="/js/auth.js"></script><script src="/js/dashboard.js"></script>
-<script>renderDashShell('admin','customers','Customers');</script></body></html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Customers — Admin</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <div class="dash">
+        <div id="dash-side"></div>
+        <main class="main">
+            <div id="dash-topbar"></div>
+            <div class="panel">
+                <h3>Customers (48,320)</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Plan</th>
+                            <th>Orders</th>
+                            <th>Total Spent</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Meera Sen</td>
+                            <td>meera@fresh.com</td>
+                            <td>Family</td>
+                            <td>48</td>
+                            <td>$1,536</td>
+                            <td><span class="badge ok">Active</span></td>
+                        </tr>
+                        <tr>
+                            <td>Rohan A.</td>
+                            <td>rohan@mail.com</td>
+                            <td>Starter</td>
+                            <td>22</td>
+                            <td>$396</td>
+                            <td><span class="badge ok">Active</span></td>
+                        </tr>
+                        <tr>
+                            <td>Priya K.</td>
+                            <td>priya@mail.com</td>
+                            <td>Feast</td>
+                            <td>84</td>
+                            <td>$4,536</td>
+                            <td><span class="badge ok">Active</span></td>
+                        </tr>
+                        <tr>
+                            <td>Jason B.</td>
+                            <td>jason@mail.com</td>
+                            <td>Starter</td>
+                            <td>12</td>
+                            <td>$216</td>
+                            <td><span class="badge warn">Paused</span></td>
+                        </tr>
+                        <tr>
+                            <td>Lea M.</td>
+                            <td>lea@mail.com</td>
+                            <td>Family</td>
+                            <td>36</td>
+                            <td>$1,152</td>
+                            <td><span class="badge ok">Active</span></td>
+                        </tr>
+                        <tr>
+                            <td>Aditi V.</td>
+                            <td>aditi@mail.com</td>
+                            <td>Family</td>
+                            <td>28</td>
+                            <td>$896</td>
+                            <td><span class="badge ok">Active</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    <script src="./js/auth.js"></script>
+    <script src="./js/dashboard.js"></script>
+    <script>renderDashShell('admin', 'customers', 'Customers');</script>
+</body>
+
+</html>

@@ -1,19 +1,107 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Orders — Admin</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="/css/style.css"/></head>
-<body><div class="dash"><div id="dash-side"></div><main class="main"><div id="dash-topbar"></div>
-<div class="panel"><h3>All Orders (1,284)</h3>
-<table><thead><tr><th>Order</th><th>Customer</th><th>Items</th><th>Amount</th><th>Date</th><th>Status</th></tr></thead>
-<tbody>
-<tr><td>#SK-4042</td><td>Meera S.</td><td>Family Box</td><td>$32.00</td><td>Jul 21</td><td><span class="badge ok">Delivered</span></td></tr>
-<tr><td>#SK-4041</td><td>Rohan A.</td><td>Veggie Box</td><td>$22.00</td><td>Jul 21</td><td><span class="badge warn">Shipped</span></td></tr>
-<tr><td>#SK-4040</td><td>Priya K.</td><td>Feast Plan</td><td>$54.00</td><td>Jul 21</td><td><span class="badge new">Processing</span></td></tr>
-<tr><td>#SK-4039</td><td>Jason B.</td><td>Starter</td><td>$18.00</td><td>Jul 20</td><td><span class="badge ok">Delivered</span></td></tr>
-<tr><td>#SK-4038</td><td>Lea M.</td><td>Custom</td><td>$45.00</td><td>Jul 20</td><td><span class="badge warn">Shipped</span></td></tr>
-<tr><td>#SK-4037</td><td>Aditi V.</td><td>Family Box</td><td>$32.00</td><td>Jul 20</td><td><span class="badge ok">Delivered</span></td></tr>
-<tr><td>#SK-4036</td><td>Marco L.</td><td>Dairy Pantry</td><td>$19.00</td><td>Jul 19</td><td><span class="badge ok">Delivered</span></td></tr>
-<tr><td>#SK-4035</td><td>Sara A.</td><td>Grain Mix</td><td>$16.00</td><td>Jul 19</td><td><span class="badge ok">Delivered</span></td></tr>
-</tbody></table></div>
-</main></div><script src="/js/auth.js"></script><script src="/js/dashboard.js"></script>
-<script>renderDashShell('admin','orders','Orders Management');</script></body></html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Orders — Admin</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+    <div class="dash">
+        <div id="dash-side"></div>
+        <main class="main">
+            <div id="dash-topbar"></div>
+            <div class="panel">
+                <h3>All Orders (1,284)</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Order</th>
+                            <th>Customer</th>
+                            <th>Items</th>
+                            <th>Amount</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#SK-4042</td>
+                            <td>Meera S.</td>
+                            <td>Family Box</td>
+                            <td>$32.00</td>
+                            <td>Jul 21</td>
+                            <td><span class="badge ok">Delivered</span></td>
+                        </tr>
+                        <tr>
+                            <td>#SK-4041</td>
+                            <td>Rohan A.</td>
+                            <td>Veggie Box</td>
+                            <td>$22.00</td>
+                            <td>Jul 21</td>
+                            <td><span class="badge warn">Shipped</span></td>
+                        </tr>
+                        <tr>
+                            <td>#SK-4040</td>
+                            <td>Priya K.</td>
+                            <td>Feast Plan</td>
+                            <td>$54.00</td>
+                            <td>Jul 21</td>
+                            <td><span class="badge new">Processing</span></td>
+                        </tr>
+                        <tr>
+                            <td>#SK-4039</td>
+                            <td>Jason B.</td>
+                            <td>Starter</td>
+                            <td>$18.00</td>
+                            <td>Jul 20</td>
+                            <td><span class="badge ok">Delivered</span></td>
+                        </tr>
+                        <tr>
+                            <td>#SK-4038</td>
+                            <td>Lea M.</td>
+                            <td>Custom</td>
+                            <td>$45.00</td>
+                            <td>Jul 20</td>
+                            <td><span class="badge warn">Shipped</span></td>
+                        </tr>
+                        <tr>
+                            <td>#SK-4037</td>
+                            <td>Aditi V.</td>
+                            <td>Family Box</td>
+                            <td>$32.00</td>
+                            <td>Jul 20</td>
+                            <td><span class="badge ok">Delivered</span></td>
+                        </tr>
+                        <tr>
+                            <td>#SK-4036</td>
+                            <td>Marco L.</td>
+                            <td>Dairy Pantry</td>
+                            <td>$19.00</td>
+                            <td>Jul 19</td>
+                            <td><span class="badge ok">Delivered</span></td>
+                        </tr>
+                        <tr>
+                            <td>#SK-4035</td>
+                            <td>Sara A.</td>
+                            <td>Grain Mix</td>
+                            <td>$16.00</td>
+                            <td>Jul 19</td>
+                            <td><span class="badge ok">Delivered</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    <script src="../js/auth.js"></script>
+    <script src="../js/dashboard.js"></script>
+    <script>renderDashShell('admin', 'orders', 'Orders Management');</script>
+</body>
+
+</html>

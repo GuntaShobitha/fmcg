@@ -1,21 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>My Orders — Stackly</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="/css/style.css"/></head>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>My Orders — Stackly</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+
 <body>
-<div class="dash"><div id="dash-side"></div><main class="main"><div id="dash-topbar"></div>
-<div class="panel"><h3>All Orders</h3>
-<table><thead><tr><th>Order</th><th>Item</th><th>Amount</th><th>Date</th><th>Status</th></tr></thead>
-<tbody>
-<tr><td>#SK-1042</td><td>Family Fruit Box</td><td>$24.00</td><td>Jul 18</td><td><span class="badge ok">Delivered</span></td></tr>
-<tr><td>#SK-1039</td><td>Veggie Rainbow</td><td>$22.00</td><td>Jul 15</td><td><span class="badge ok">Delivered</span></td></tr>
-<tr><td>#SK-1035</td><td>Dairy Pantry</td><td>$19.00</td><td>Jul 11</td><td><span class="badge warn">Shipped</span></td></tr>
-<tr><td>#SK-1030</td><td>Grain & Pulse</td><td>$16.00</td><td>Jul 08</td><td><span class="badge new">Processing</span></td></tr>
-<tr><td>#SK-1024</td><td>Custom Box</td><td>$34.00</td><td>Jul 01</td><td><span class="badge ok">Delivered</span></td></tr>
-<tr><td>#SK-1018</td><td>Family Fruit Box</td><td>$24.00</td><td>Jun 24</td><td><span class="badge ok">Delivered</span></td></tr>
-</tbody></table></div>
-</main></div>
-<script src="/js/auth.js"></script><script src="/js/dashboard.js"></script>
-<script>renderDashShell('user','orders','My Orders');</script>
-</body></html>
+    <div class="dash">
+        <div id="dash-side"></div>
+        <main class="main">
+            <div id="dash-topbar"></div>
+            <div class="panel">
+                <h3>All Orders</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Order</th>
+                            <th>Item</th>
+                            <th>Amount</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#SK-1042</td>
+                            <td>Family Fruit Box</td>
+                            <td>$24.00</td>
+                            <td>Jul 18</td>
+                            <td><span class="badge ok">Delivered</span></td>
+                        </tr>
+                        <tr>
+                            <td>#SK-1039</td>
+                            <td>Veggie Rainbow</td>
+                            <td>$22.00</td>
+                            <td>Jul 15</td>
+                            <td><span class="badge ok">Delivered</span></td>
+                        </tr>
+                        <tr>
+                            <td>#SK-1035</td>
+                            <td>Dairy Pantry</td>
+                            <td>$19.00</td>
+                            <td>Jul 11</td>
+                            <td><span class="badge warn">Shipped</span></td>
+                        </tr>
+                        <tr>
+                            <td>#SK-1030</td>
+                            <td>Grain & Pulse</td>
+                            <td>$16.00</td>
+                            <td>Jul 08</td>
+                            <td><span class="badge new">Processing</span></td>
+                        </tr>
+                        <tr>
+                            <td>#SK-1024</td>
+                            <td>Custom Box</td>
+                            <td>$34.00</td>
+                            <td>Jul 01</td>
+                            <td><span class="badge ok">Delivered</span></td>
+                        </tr>
+                        <tr>
+                            <td>#SK-1018</td>
+                            <td>Family Fruit Box</td>
+                            <td>$24.00</td>
+                            <td>Jun 24</td>
+                            <td><span class="badge ok">Delivered</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    <script src="../js/auth.js"></script>
+    <script src="../js/dashboard.js"></script>
+    <script>renderDashShell('user', 'orders', 'My Orders');</script>
+</body>
+
+</html>

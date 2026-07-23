@@ -1,16 +1,42 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Settings — Admin</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="/css/style.css"/></head>
-<body><div class="dash"><div id="dash-side"></div><main class="main"><div id="dash-topbar"></div>
-<div class="panel"><h3>Store Settings</h3>
-<form style="display:grid;gap:14px;margin-top:14px;max-width:520px" onsubmit="event.preventDefault();alert('Saved!')">
-<div class="field"><label>Store name</label><input type="text" value="Stackly Organic"/></div>
-<div class="field"><label>Support email</label><input type="email" value="hello@stackly.co"/></div>
-<div class="field"><label>Currency</label><select><option>USD $</option><option>EUR €</option><option>INR ₹</option></select></div>
-<div class="field"><label>Delivery cutoff</label><input type="time" value="11:00"/></div>
-<button type="submit" class="btn btn-primary">Save changes</button>
-<button type="button" onclick="logout()" class="btn btn-ghost">Logout</button>
-</form></div>
-</main></div><script src="/js/auth.js"></script><script src="/js/dashboard.js"></script>
-<script>renderDashShell('admin','settings','Settings');</script></body></html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Settings — Admin</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+    <div class="dash">
+        <div id="dash-side"></div>
+        <main class="main">
+            <div id="dash-topbar"></div>
+            <div class="panel">
+                <h3>Store Settings</h3>
+                <form style="display:grid;gap:14px;margin-top:14px;max-width:520px"
+                    onsubmit="event.preventDefault();alert('Saved!')">
+                    <div class="field"><label>Store name</label><input type="text" value="Stackly Organic" /></div>
+                    <div class="field"><label>Support email</label><input type="email" value="hello@stackly.co" /></div>
+                    <div class="field"><label>Currency</label><select>
+                            <option>USD $</option>
+                            <option>EUR €</option>
+                            <option>INR ₹</option>
+                        </select></div>
+                    <div class="field"><label>Delivery cutoff</label><input type="time" value="11:00" /></div>
+                    <button type="submit" class="btn btn-primary">Save changes</button>
+                    <button type="button" onclick="logout()" class="btn btn-ghost">Logout</button>
+                </form>
+            </div>
+        </main>
+    </div>
+    <script src="../js/auth.js"></script>
+    <script src="../js/dashboard.js"></script>
+    <script>renderDashShell('admin', 'settings', 'Settings');</script>
+</body>
+
+</html>

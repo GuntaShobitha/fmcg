@@ -1,29 +1,96 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Analytics — Admin</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="/css/style.css"/></head>
-<body><div class="dash"><div id="dash-side"></div><main class="main"><div id="dash-topbar"></div>
-<div class="stats">
-<div class="stat"><div class="n">$1.28M</div><div class="l">YTD Revenue</div><div class="d">+18% YoY</div></div>
-<div class="stat"><div class="n">98%</div><div class="l">On-Time Rate</div><div class="d">+2%</div></div>
-<div class="stat"><div class="n">4.9★</div><div class="l">Avg Rating</div><div class="d">12k reviews</div></div>
-<div class="stat"><div class="n">62%</div><div class="l">Repeat Rate</div><div class="d">Cohort 12mo</div></div>
-</div>
-<div class="panels">
-<div class="panel"><h3>Revenue by Category</h3>
-<div style="display:grid;gap:14px;margin-top:16px">
-<div><div style="display:flex;justify-content:space-between;font-size:.9rem"><span>Fruits</span><strong>$486k</strong></div><div style="height:10px;background:#eee;border-radius:6px;margin-top:6px;overflow:hidden"><div style="width:80%;height:100%;background:var(--green)"></div></div></div>
-<div><div style="display:flex;justify-content:space-between;font-size:.9rem"><span>Vegetables</span><strong>$342k</strong></div><div style="height:10px;background:#eee;border-radius:6px;margin-top:6px;overflow:hidden"><div style="width:62%;height:100%;background:var(--green-light)"></div></div></div>
-<div><div style="display:flex;justify-content:space-between;font-size:.9rem"><span>Dairy</span><strong>$268k</strong></div><div style="height:10px;background:#eee;border-radius:6px;margin-top:6px;overflow:hidden"><div style="width:48%;height:100%;background:var(--amber)"></div></div></div>
-<div><div style="display:flex;justify-content:space-between;font-size:.9rem"><span>Grains</span><strong>$184k</strong></div><div style="height:10px;background:#eee;border-radius:6px;margin-top:6px;overflow:hidden"><div style="width:32%;height:100%;background:var(--tomato)"></div></div></div>
-</div></div>
-<div class="panel"><h3>Delivery Regions</h3>
-<div style="display:grid;gap:10px;margin-top:12px">
-<div style="display:flex;justify-content:space-between"><span>North</span><strong>18,420</strong></div>
-<div style="display:flex;justify-content:space-between"><span>South</span><strong>12,180</strong></div>
-<div style="display:flex;justify-content:space-between"><span>East</span><strong>9,240</strong></div>
-<div style="display:flex;justify-content:space-between"><span>West</span><strong>8,480</strong></div>
-</div></div>
-</div>
-</main></div><script src="/js/auth.js"></script><script src="/js/dashboard.js"></script>
-<script>renderDashShell('admin','analytics','Analytics');</script></body></html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Analytics — Admin</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <div class="dash">
+        <div id="dash-side"></div>
+        <main class="main">
+            <div id="dash-topbar"></div>
+            <div class="stats">
+                <div class="stat">
+                    <div class="n">$1.28M</div>
+                    <div class="l">YTD Revenue</div>
+                    <div class="d">+18% YoY</div>
+                </div>
+                <div class="stat">
+                    <div class="n">98%</div>
+                    <div class="l">On-Time Rate</div>
+                    <div class="d">+2%</div>
+                </div>
+                <div class="stat">
+                    <div class="n">4.9★</div>
+                    <div class="l">Avg Rating</div>
+                    <div class="d">12k reviews</div>
+                </div>
+                <div class="stat">
+                    <div class="n">62%</div>
+                    <div class="l">Repeat Rate</div>
+                    <div class="d">Cohort 12mo</div>
+                </div>
+            </div>
+            <div class="panels">
+                <div class="panel">
+                    <h3>Revenue by Category</h3>
+                    <div style="display:grid;gap:14px;margin-top:16px">
+                        <div>
+                            <div style="display:flex;justify-content:space-between;font-size:.9rem">
+                                <span>Fruits</span><strong>$486k</strong></div>
+                            <div style="height:10px;background:#eee;border-radius:6px;margin-top:6px;overflow:hidden">
+                                <div style="width:80%;height:100%;background:var(--green)"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div style="display:flex;justify-content:space-between;font-size:.9rem">
+                                <span>Vegetables</span><strong>$342k</strong></div>
+                            <div style="height:10px;background:#eee;border-radius:6px;margin-top:6px;overflow:hidden">
+                                <div style="width:62%;height:100%;background:var(--green-light)"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div style="display:flex;justify-content:space-between;font-size:.9rem">
+                                <span>Dairy</span><strong>$268k</strong></div>
+                            <div style="height:10px;background:#eee;border-radius:6px;margin-top:6px;overflow:hidden">
+                                <div style="width:48%;height:100%;background:var(--amber)"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div style="display:flex;justify-content:space-between;font-size:.9rem">
+                                <span>Grains</span><strong>$184k</strong></div>
+                            <div style="height:10px;background:#eee;border-radius:6px;margin-top:6px;overflow:hidden">
+                                <div style="width:32%;height:100%;background:var(--tomato)"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel">
+                    <h3>Delivery Regions</h3>
+                    <div style="display:grid;gap:10px;margin-top:12px">
+                        <div style="display:flex;justify-content:space-between">
+                            <span>North</span><strong>18,420</strong></div>
+                        <div style="display:flex;justify-content:space-between">
+                            <span>South</span><strong>12,180</strong></div>
+                        <div style="display:flex;justify-content:space-between"><span>East</span><strong>9,240</strong>
+                        </div>
+                        <div style="display:flex;justify-content:space-between"><span>West</span><strong>8,480</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="./js/auth.js"></script>
+    <script src="./js/dashboard.js"></script>
+    <script>renderDashShell('admin', 'analytics', 'Analytics');</script>
+</body>
+
+</html>
