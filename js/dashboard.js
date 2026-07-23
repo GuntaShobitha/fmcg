@@ -1,20 +1,20 @@
 // Shared dashboard sidebar rendering
 const SIDE_ITEMS = {
   user: [
-    ['dashboard','🏠','Dashboard','user/dashboard.html'],
-    ['orders','📦','My Orders','user/orders.html'],
-    ['products','🥦','Browse Products','user/products.html'],
-    ['subscription','🔁','Subscription','user/subscription.html'],
-    ['wishlist','❤️','Wishlist','user/wishlist.html'],
+    ['dashboard','🏠','Dashboard','./dashboard.html'],
+    ['orders','📦','My Orders','./orders.html'],
+    ['products','🥦','Browse Products','./products.html'],
+    ['subscription','🔁','Subscription','./subscription.html'],
+    ['wishlist','❤️','Wishlist','./wishlist.html'],
    
   ],
   admin: [
-    ['dashboard','📊','Dashboard','../admin/dashboard.html'],
-    ['orders','📦','Orders','../admin/orders.html'],
-    ['products','🥦','Products','../admin/products.html'],
-    ['customers','👥','Customers','../admin/customers.html'],
-    ['farmers','👩‍🌾','Farmers','../admin/farmers.html'],
-    ['analytics','📈','Analytics','../admin/analytics.html'],
+    ['dashboard','📊','Dashboard','./dashboard.html'],
+    ['orders','📦','Orders','./orders.html'],
+    ['products','🥦','Products','./products.html'],
+    ['customers','👥','Customers','./customers.html'],
+    ['farmers','👩‍🌾','Farmers','./farmers.html'],
+    ['analytics','📈','Analytics','./analytics.html'],
   ],
 };
 
