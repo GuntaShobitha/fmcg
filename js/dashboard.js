@@ -27,7 +27,7 @@ function renderDashShell(role, active, title){
     <aside class="sidebar">
       <div class="brand">
 <a href="./dashboard.html">
-          <img src="../images/stackly-logo-green.webp" alt="STACKLY" style="height:80px;width:120px;margin-bottom:16px"/>
+          <img src="../images/stackly-logo-green.webp" alt="STACKLY" style="height:120px;width:200px;margin-bottom:16px"/>
         </a>      </div>
       <div class="side-profile">
         <div class="side-avatar">${initials}</div>

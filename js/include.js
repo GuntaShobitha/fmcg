@@ -30,7 +30,7 @@ const FOOTER_HTML = `
     <div class="foot-grid">
       <div>
         <a href="./index.html">
-          <img src="./images/stackly-logo-green.webp" alt="STACKLY" style="height:80px;width:120px;margin-bottom:16px"/>
+          <img src="./images/stackly-logo-green.webp" alt="STACKLY" style="height:80px;width:120px;margin-bottom:16px; filter: brightness(0) invert(1) "/>
         </a>
         <p style="color:#c9d1c1;max-width:320px">Farm-fresh organic FMCG delivered from local farms to your kitchen, every single day.</p>
         <div class="foot-social">
